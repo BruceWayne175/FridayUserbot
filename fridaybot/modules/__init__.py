@@ -55,7 +55,7 @@ else:
     dbstats = "Not Fine ❌"
 
 inlinestats = (
-    f"✘ SHOWING FRIDAY STATS ✘\n"
+    f"💛 SHOWING BRUCE'S STATS 💛\n"
     f"VERSION = {currentversion} \n"
     f"DATABASE = {dbstats} \n"
     f"SUDO = {amiusingsudo} \n"
