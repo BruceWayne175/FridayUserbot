@@ -1,7 +1,7 @@
 {
   "name": "Friday-Userbot",
   "description": "A Userbot Based On Telethon By Friday Devs",
-  "logo": "https://telegra.ph/file/b4e1e36c6b1fcb32dd997.jpg",
+  "logo": "https://telegra.ph/file/8095914346289b530a8aa.jpg",
   "keywords": [
     "telegram",
     "fridaybot",
@@ -9,9 +9,9 @@
     "telegram-fridaybot",
     "productivity"
   ],
-  "repository": "https://github.com/starkgang/FridayUserbot",
+  "repository": "https://github.com/BruceWayne175/FridayUserbot",
   "website": "starkgang.ml",
-  "success_url": "t.me/FridayOT",
+  "success_url": "t.me/BruceSL",
   "stack": "container",
   "env": {
     "ENV": {
@@ -94,7 +94,7 @@
     },
     "TZ": {
       "description": "Required for Correct Time on autopic",
-      "value": "Asia/Kolkata",
+      "value": "Asia/Colombo",
       "required": false
     }
   },
