@@ -1,5 +1,5 @@
-<p align="center"><a href="https://t.me/fridayot"><img src="https://telegra.ph/file/22535f8051a58af113586.jpg" width="5000"></a></p> 
-<h1 align="center"><b>FRIDAY-USERBOT 🇮🇳 </b></h1>
+ 
+<h1 align="center"><b>My-USERBOT </b></h1>
 <h4 align="center">A Powerful, Smart And Simple Userbot In Telethon.</h4>
 
 
@@ -10,20 +10,20 @@
 
 # Support
 
-<a href="https://t.me/FridaySupportOfficial"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
-
-<a href="https://t.me/fridayOT"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
 
 
 
 
 
-# Method
 
-<a href="https://youtu.be/xfHcm_e92eQ"><img src="https://img.shields.io/badge/How%20To-Deploy-red.svg?logo=Youtube"></a>
 
-<a href="https://app.gitbook.com/@starkgangz/s/fridayuserbot/"><img src="https://img.shields.io/badge/Read%20More-GitBook-red.svg"></a>
+
+
+
+
+
+
 
 
 
