@@ -148,14 +148,14 @@ if ENV:
         ANTISPAM_FEATURE = os.environ.get("ANTISPAM_FEATURE", "ENABLE")
         ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
         UPSTREAM_REPO = os.environ.get(
-            "UPSTREAM_REPO", "https://github.com/Starkgang/FridayUserbot"
+            "UPSTREAM_REPO", "https://github.com/BruceWayne175/FridayUserbot"
         )
         ALIVE_IMAGE = os.environ.get(
-            "ALIVE_IMAGE", "https://telegra.ph/file/22535f8051a58af113586.jpg"
+            "ALIVE_IMAGE", "https://telegra.ph/file/8095914346289b530a8aa.jpg"
         )
         ASSISTANT_START_PIC = os.environ.get(
             "ASSISTANT_START_PIC",
-            "https://www.logolynx.com/images/logolynx/72/7257d2ac93b97c8a2c7308266052df13.png",
+            "https://www.logolynx.com/images/logolynx/62/62d374ebf5de2d4c51980897fec8bc37.png",
         )
         TESSDATA_PREFIX = os.environ.get(
             "TESSDATA_PREFIX", "/usr/share/tesseract-ocr/4.00/tessdata"
