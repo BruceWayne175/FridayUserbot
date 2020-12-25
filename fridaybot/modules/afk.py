@@ -93,7 +93,7 @@ async def set_not_afk(event):
                 event.chat_id,
                 "Please set `PRIVATE_GROUP_ID` "
                 + "for the proper functioning of afk functionality "
-                + "Please Seek Support in @FridayOT\n\n `{}`".format(str(e)),
+                + "Please Seek Support in @BruceSL\n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True,
             )
