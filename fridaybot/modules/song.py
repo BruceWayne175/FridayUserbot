@@ -13,7 +13,7 @@ async def WooMai(netase):
     song = netase.pattern_match.group(1)
     chat = "@WooMaiBot"
     link = f"/netease {song}"
-    await netase.edit("```Getting Your Music```")
+    await netase.edit("```♻️Getting Your Music```")
     async with bot.conversation(chat) as conv:
         await asyncio.sleep(2)
         await netase.edit("`⬇️Downloading...Please wait`")
