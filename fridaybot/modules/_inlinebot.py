@@ -50,14 +50,17 @@ async def inline_handler(event):
             file=WARN_PIC,
             text=query,
             buttons=[
-                [custom.Button.inline("Spamming", data="dontspamnigga")],
+                [custom.Button.inline("🤬Spamming🤬", data="dontspamnigga")],
                 [
                     custom.Button.inline(
-                        "Casual Talk",
+                        "👨‍🎤Casual Talk👨‍🎤",
                         data="whattalk",
                     )
                 ],
                 [custom.Button.inline("Requesting", data="askme")],
+                [Button.url("💟 My Group 💟", "t.me/ehifilesl")],
+
+                [Button.url("💟 My Channel 💟", "t.me/ehifiles_sl")],
             ],
         )
         await event.answer([result])
