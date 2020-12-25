@@ -46,7 +46,7 @@ async def start(event):
     hmmwow = devlop.first_name
     vent = event.chat_id
     mypic = Config.ASSISTANT_START_PIC
-    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy Master [{hmmwow}](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [Friday Userbot](t.me/FridayOT)"
+    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy Master [{hmmwow}](tg://user?id={bot.uid}) \nYou Can TWaynealk/Contact My Master Using This Bot. \n\nPowered By [Bruce ](t.me/BruceSL)"
     if event.sender_id == bot.uid:
         await tgbot.send_message(
             vent,
@@ -72,8 +72,8 @@ async def start(event):
             caption=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("Deploy your Friday 🇮🇳", data="deploy")],
-                [Button.url("Help Me ❓", "t.me/Fridayot")],
+                [Button.url("💟 My Group 💟", "t.me/ehifilesl")],
+                [Button.url("💟 My Channel 💟", "t.me/ehifiles_sl")],
             ],
         )
         if os.path.exists(mypic):
@@ -89,10 +89,10 @@ async def help(event):
     if event.query.user_id is not bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message="You Can Deploy Friday In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
+            message="Thank You For Contacting Me.💛",
             buttons=[
-                [Button.url("Deploy Tutorial 📺", "https://youtu.be/xfHcm_e92eQ")],
-                [Button.url("Need Help ❓", "t.me/FridaySupportOfficial")],
+                [Button.url("💟 My Group 💟", "t.me/ehifilesl")],
+                [Button.url("💟 My Channel 💟", "t.me/ehifiles_sl")],
             ],
         )
 
