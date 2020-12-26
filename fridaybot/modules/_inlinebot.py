@@ -11,11 +11,11 @@ from fridaybot.modules import inlinestats
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
-    WARN_PIC = "https://telegra.ph/file/53aed76a90e38779161b1.jpg"
+    WARN_PIC = "https://telegra.ph/file/8095914346289b530a8aa.jpg"
 else:
     WARN_PIC = PMPERMIT_PIC
 LOG_CHAT = Config.PRIVATE_GROUP_ID
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Friday"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Bruce Wayne"
 
 
 @tgbot.on(events.InlineQuery)
@@ -23,7 +23,7 @@ async def inline_handler(event):
     builder = event.builder
     result = None
     query = event.text
-    if event.query.user_id == bot.uid and query.startswith("Friday"):
+    if event.query.user_id == bot.uid and query.startswith("Bruce Wayne"):
         rev_text = query[::-1]
         buttons = paginate_help(0, CMD_HELP, "helpme")
         result = builder.article(
@@ -36,11 +36,12 @@ async def inline_handler(event):
     elif event.query.user_id == bot.uid and query == "stats":
         result = builder.article(
             title="Stats",
-            text=f"**Showing Stats For {DEFAULTUSER}'s Friday** \nNote --> Only Owner Can Check This \n(C) @FridayOT",
+            text=f"**Showing Stats For {DEFAULTUSER}'s Bruce Wayne** \nNote --> Only Owner Can Check This \n(C) @BruceSL",
             buttons=[
                 [custom.Button.inline("Show Stats ?", data="terminator")],
-                [Button.url("Repo 🇮🇳", "https://github.com/StarkGang/FridayUserbot")],
-                [Button.url("Join Channel ❤️", "t.me/Fridayot")],
+                [Button.url("💟 My Group 💟", "t.me/ehifilesl")],
+
+               [Button.url("💟 My Channel 💟", "t.me/ehifiles_sl")],
             ],
         )
         await event.answer([result])
@@ -49,14 +50,17 @@ async def inline_handler(event):
             file=WARN_PIC,
             text=query,
             buttons=[
-                [custom.Button.inline("Spamming", data="dontspamnigga")],
+                [custom.Button.inline("🤬Spamming🤬", data="dontspamnigga")],
                 [
                     custom.Button.inline(
-                        "Casual Talk",
+                        "👨‍🎤Casual Talk👨‍🎤",
                         data="whattalk",
                     )
                 ],
                 [custom.Button.inline("Requesting", data="askme")],
+                [Button.url("💟 My Group 💟", "t.me/ehifilesl")],
+
+                [Button.url("💟 My Channel 💟", "t.me/ehifiles_sl")],
             ],
         )
         await event.answer([result])
@@ -74,7 +78,7 @@ async def on_plug_in_callback_query_handler(event):
         # https://t.me/TelethonChat/115200
         await event.edit(buttons=buttons)
     else:
-        reply_popp_up_alert = "Please get your own Userbot, and don't use mine!"
+        reply_popp_up_alert = "Please get your own Userbot, and don't use mine! 🤬"
         await event.answer(reply_popp_up_alert, cache_time=0, alert=True)
 
 
@@ -92,7 +96,7 @@ async def on_plug_in_callback_query_handler(event):
         # https://t.me/TelethonChat/115200
         await event.edit(buttons=buttons)
     else:
-        reply_pop_up_alert = "Please get your own Userbot, and don't use mine!"
+        reply_pop_up_alert = "Please get your own Userbot, and don't use mine! 🤬"
         await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -103,14 +107,14 @@ async def on_plug_in_callback_query_handler(event):
 )
 async def on_plug_in_callback_query_handler(event):
     if not event.query.user_id == bot.uid:
-        sedok = "Who The Fuck Are You? Get Your Own Friday."
+        sedok = "Who The Fuck Are You? Get Your Own Bot. 🤬"
         await event.answer(sedok, cache_time=0, alert=True)
         return
     plugin_name = event.data_match.group(1).decode("UTF-8")
     if plugin_name in CMD_HELP:
         help_string = f"**💡 PLUGIN NAME 💡 :** `{plugin_name}` \n{CMD_HELP[plugin_name]}"
     reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n\n**(C) @FRIDAYOT** ".format(plugin_name)
+    reply_pop_up_alert += "\n\n**(C) @BruceSL** ".format(plugin_name)
     if len(reply_pop_up_alert) >= 4096:
         crackexy = "`Pasting Your Help Menu.`"
         await event.answer(crackexy, cache_time=0, alert=True)
@@ -136,7 +140,7 @@ async def rip(event):
         text = inlinestats
         await event.answer(text, alert=True)
     else:
-        txt = "You Can't View My Masters Stats"
+        txt = "You Can't View My Masters Stats 🤬"
         await event.answer(txt, alert=True)
 
 
@@ -148,7 +152,7 @@ async def rip(event):
         return
     await event.get_chat()
     him_id = event.query.user_id
-    text1 = "You Have Chosed A Probhited Option. Therefore, You Have Been Blocked By UserBot. 🇮🇳"
+    text1 = "You Have Chosed A Probhited Option. Therefore, You Have Been Blocked By UserBot. 💔"
     await event.edit("Choice Not Accepted ❌")
     await borg.send_message(event.query.user_id, text1)
     await borg(functions.contacts.BlockRequest(event.query.user_id))
@@ -161,14 +165,14 @@ async def rip(event):
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"backme")))
 async def sed(event):
     if event.query.user_id != bot.uid:
-        sedok = "Who The Fuck Are You? Get Your Own Friday."
+        sedok = "Who The Fuck Are You? Get Your Own Bot. 🤬"
         await event.answer(sedok, cache_time=0, alert=True)
         return
     await event.answer("Back", cache_time=0, alert=False)
     # This Is Copy of Above Code. (C) @SpEcHiDe
     buttons = paginate_help(0, CMD_HELP, "helpme")
-    sed = f"""Friday Userbot Modules Are Listed Here !\n
-For More Help or Support Visit @FridayOT \nCurrently Loaded Plugins: {len(CMD_LIST)}"""
+    sed = f"""Bruce's Userbot Modules Are Listed Here !\n
+For More Help or Support Visit @BruceSL \nCurrently Loaded Plugins: {len(CMD_LIST)}"""
     await event.edit(message=sed, buttons=buttons)
 
 
@@ -181,7 +185,7 @@ async def rip(event):
     await event.get_chat()
     him_id = event.query.user_id
     await event.edit("Choice Accepted ✔️")
-    text2 = "Ok. Please Wait Until My Master Approves. Don't Spam Or Try Anything Stupid. \nThank You For Contacting Me."
+    text2 = "Ok. Please Wait Until My Master Approves. Don't Spam Or Try Anything Stupid. \nThank You For Contacting Me💛."
     await borg.send_message(event.query.user_id, text2)
     await tgbot.send_message(
         LOG_CHAT,
@@ -218,7 +222,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = sorted(helpable_modules)
     modules = [
         custom.Button.inline(
-            "{} {} {}".format("✘", x, "✘"), data="us_plugin_{}".format(x)
+            "{} {} {}".format("💛", x, "💛"), data="us_plugin_{}".format(x)
         )
         for x in helpable_modules
     ]
@@ -249,7 +253,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. \nContact my master. If You Want Your Own Assistant, Profile Link [Here](https://t.me//BruceSL)",
         )
         await event.answer([resultm])
         return
@@ -330,7 +334,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. \nContact my master. If You Want Your Own Assistant, Profile Link [Here](https://t.me//BruceSL)",
         )
         await event.answer([resultm])
         return
@@ -383,7 +387,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. \nContact my master. If You Want Your Own Assistant, Profile Link [Here](https://t.me//BruceSL)",
         )
         await event.answer([resultm])
         return
@@ -427,7 +431,7 @@ async def inline_handler(event):
     if event.query.user_id != bot.uid:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. \nContact my master. If You Want Your Own Assistant, Profile Link [Here](https://t.me//BruceSL)",
         )
         await event.answer([resultm])
         return
@@ -437,7 +441,7 @@ async def inline_handler(event):
     if query == None:
         resulte = builder.article(
             title="Usage Guide.",
-            description="(C) @FridayOT",
+            description="(C) @BruceSL",
             text=f"**How To Use Me?** \n**Youtube :** `@{firstname} yt <query>` \n**Example :** `@{firstname} yt why we lose song` \n\n**Torrent :** `@{firstname} torrent <query>` \n**Example :** `@{firstname} torrent avengers endgame ` \n\n**JioSaavan :** `@{firstname} jm <query>` \n**Example :** `@{firstname} jm dilbaar`",
             buttons=[
                 [Button.url("Contact Me", f"t.me/{firstname}")],
