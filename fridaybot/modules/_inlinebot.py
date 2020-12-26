@@ -27,7 +27,7 @@ async def inline_handler(event):
         rev_text = query[::-1]
         buttons = paginate_help(0, CMD_HELP, "helpme")
         result = builder.article(
-            "© Userbot Help",
+            "© Bruce's Help",
             text="{}\nCurrently Loaded Plugins: {}".format(query, len(CMD_LIST)),
             buttons=buttons,
             link_preview=False,
@@ -40,7 +40,6 @@ async def inline_handler(event):
             buttons=[
                 [custom.Button.inline("Show Stats ?", data="terminator")],
                 [Button.url("💟 My Group 💟", "t.me/ehifilesl")],
-
                [Button.url("💟 My Channel 💟", "t.me/ehifiles_sl")],
             ],
         )
@@ -57,7 +56,7 @@ async def inline_handler(event):
                         data="whattalk",
                     )
                 ],
-                [custom.Button.inline("Requesting", data="askme")],
+                [custom.Button.inline("🧭Requesting🧭", data="askme")],
                 [Button.url("💟 My Group 💟", "t.me/ehifilesl")],
 
                 [Button.url("💟 My Channel 💟", "t.me/ehifiles_sl")],
